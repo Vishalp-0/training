@@ -1,10 +1,10 @@
 function changePrefixorsuffix (name, initial, type) {
     if(type === "prefix") {
-        return initial + " " + name;
+        return initial.charAt(0).toUpperCase() + initial.slice(1).toLowerCase() + " " + name.charAt(0).toUpperCase()+name.slice(1).toLowerCase();
     }
 
     if (type ==="suffix"){
-        return name + " " + initial;
+        return name.charAt(0).toUpperCase()+name.slice(1).toLowerCase() + " " + initial.charAt(0).toUpperCase() + initial.slice(1).toLowerCase();
     
     }
 }
