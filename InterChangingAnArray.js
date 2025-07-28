@@ -7,5 +7,12 @@ function InterChangingInArray (array1, index) {
         array1[array2]= temp;           
     }
     
-    els3 ()
-}    
+    else if (array2 >= 0 && array2 < array1.length - 1) {
+        let temp = array1[array2];
+        array1[array2] = array1[array2 + 1];
+        array1[array2 + 1] = temp;
+    }
+
+    return array1;
+}
+
